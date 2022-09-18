@@ -1,10 +1,10 @@
 ---
+published: true
 layout: post
 title: "[football] Scale Out을 고려한 아키텍처 설계"
 author: kimcno3
 categories: f-lab
 tags:  f-lab project2
-published: true
 ---
 
 ## # 문제점
