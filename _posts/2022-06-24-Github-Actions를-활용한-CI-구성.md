@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github Actions를 활용한 CI 구성
+title: "[soldout] Github Actions를 활용한 CI 구성"
 author: kimcno3
 categories: f-lab
 tags: f-lab project1
