@@ -154,6 +154,7 @@ public class RedisServiceImpl implements RedisService {
 Redis에 저장되는 자료구조는 HashMap을 선택했고, 채팅 서버의 주소를 조합한 key 안에 3가지 정보를 저장해두는 구조로 구현했습니다.
 
 ### Health Check 동작 확인
+<img width="1155" alt="스크린샷 2022-09-20 오전 3 02 31" src="https://user-images.githubusercontent.com/77563468/191092247-d81ca3bf-db00-444b-90cd-852c1075388a.png">
 
 Health Check가 될 때마다 로그를 확인해보면 위 사진처럼 정상적으로 모니터링이 되는 것을 확인할 수 있습니다.
 
