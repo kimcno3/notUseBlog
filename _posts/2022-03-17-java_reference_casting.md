@@ -101,7 +101,8 @@ Child child2 = parent2; // 에러발생(겉보기는 부모타입)
 
 <br>
 
-## :pushpin: `instanceof` 예약어 추가 설명
+## instanceof 예약어 추가 설명
+***
 참조자료형의 형변환을 하기 전에 형변환 가능 여부를 미리 파악하기 위해 사용되는 예약어로 boolean 값을 리턴한다.
 
 - 자식객체 `instanceof` 부모클래스 : 이 객체가 부모클래스를 대신할 수 있는가? -> `return true`

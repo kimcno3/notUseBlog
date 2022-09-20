@@ -7,6 +7,7 @@ tags: f-lab project1
 ---
 
 ## # 문제점
+***
 DB에 접근하는 로직은 크기 쓰기에 대한 요청과 읽기에 대한 요청이 많습니다.
 
 그렇기 때문에 @Transactional 어노테이션을 선언하는 경우에도 읽기만을 위한 메소드엔 @Transactional(readOnly = true)로 선언해 의도치 않은 데이터 수정에 대해 방지하는 구조로 설계합니다.
@@ -18,6 +19,7 @@ DB에 접근하는 로직은 크기 쓰기에 대한 요청과 읽기에 대한 
 이를 조금 더 효율적인 구조로 변경하기 위해 Master-Slave 구조를 적용해 보기로 했습니다.
 
 ## # 해결방안
+***
 ### Master-Slave 구조
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Ftr78z%2Fbtq96EtX4AQ%2FZjOT5sSMZTI2dYSkJXb1U1%2Fimg.jpg)
@@ -120,6 +122,7 @@ public class ReplicationRoutingDataSource extends AbstractRoutingDataSource {
 
 }
 ```
+
 `AbstractRoutingDataSource` 는 조회된 key를 기반으로 등록된 `Datasource` 중 하나를 호출하도록 조건문을 선언해줬습니다.
 
 - `@Transactional(readOnly = false)` : Master DB 연결
@@ -162,8 +165,10 @@ public class RoutingDataSourceConfig {
 키로 활용되는 값은 Enum 클래스로 추가 선언해 문자열에 의한 에러를 최대한 방지해줬습니다.
 
 ## # 마치며
+***
 Replication 구조를 DB에 적용함으로써 하나의 서버로만 구성하는 구조에서 서버 다운 시 발생할 수 있는 심각한 장애를 방지하는 구조로 리팩토링할 수 있었습니다.
 
 ## # 참고 자료
+***
 - https://k3068.tistory.com/102
 - https://taes-k.github.io/2020/03/11/sprinig-master-slave-dynamic-routing-datasource/

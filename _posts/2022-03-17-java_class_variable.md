@@ -6,7 +6,7 @@ categories: java
 tags: java
 ---
 
-## **예제 코드**
+### **예제 코드**
 ```java
 public class ReferenceStaticVariable{
     static String name; // 클래스변수 name

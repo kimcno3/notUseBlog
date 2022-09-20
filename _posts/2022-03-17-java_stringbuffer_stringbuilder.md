@@ -7,6 +7,7 @@ tags: java
 ---
 
 ## String
+***
 String은 불변한 성격(immutable)을 가지고 있습니다. 즉 한번 생성한 문자열은 수정이 불가능합니다.
 
 이러한 특성때문에 이미 생성된 String 객체에 문자열을 수정할 경우, 같은 메모리에 저장된 값만 수정되는 것이 아니라 통째로 새로운 메모리 주소에 저장됩니다.
@@ -23,7 +24,8 @@ System.out.println(str); // output : 안녕하세요. 반갑습니다.
 
 <br>
 
-## ✔️ StringBuffer, StringBuilder
+## StringBuffer, StringBuilder
+***
 StringBuffer와 StringBuilder 클래스는 String과 다르게 mutable한 성격을 가진 클래스입니다. 즉, **문자열의 수정이 가능한 클래스**입니다.
 
 그래서 두 클래스는 문자열에 대한 수정이 빈번한 경우에 사용하는 것이 좋고 연산이 아닌 `append()`, `delete()`와 같은 메소드를 사용하여 수정할 수 있습니다.
@@ -36,7 +38,8 @@ System.out.println(str); // output : 안녕하세요. 반갑습니다.
 
 <br>
 
-## ✔️ StringBuffer와 StringBuilder 차이점
+## StringBuffer와 StringBuilder 차이점
+***
 StringBuffer와 StringBuilder의 차이점은 **쓰레드 동기화 지원** 유무이며 StringBuffer가 쓰레드 동기화를 지원하는 클래스입니다.
 
 > **용어 설명**

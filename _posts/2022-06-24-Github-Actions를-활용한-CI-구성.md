@@ -7,9 +7,11 @@ tags: f-lab project1
 ---
 
 ## # 문제점
+***
 Github Flow를 브랜치 전략으로 선택했기 때문에 CI에 대한 구성이 필요했고 현재 상황에서 가장 효율적인 자동화 전략이 무엇인지 고민하게 되었습니다.
 
 ## # 해결방안
+***
 ### Github Actions
 Github Actions은 Github 저장소를 기반으로 소프트웨어 개발 Workflow를 자동화 할 수 있는 도구입니다. 간단하게 말하자면 Github에서 직접 제공하는 CI/CD 도구라고 할 수 있습니다. 
 
@@ -82,9 +84,11 @@ jobs:
 github actions는 마켓 플레이스에서 사용자가 원하는 동작에 대한 코드를 제공해줘 손 쉽게 위와 같은 yml 파일을 구성할 수 있습니다. 위처럼 workflow 정의해두고 프로젝트에 파일을 포함시켜두면 Github 저장소 내에서 CI에 대한 관리를 할 수 있도록 구성할 수 있습니다.
 
 ## # 마치며
+***
 코드 작성 외적인 작업이지만 꽤 많은 시간을 소요하게 되는 테스트 및 빌드 과정에 대해 자동화 구성을 해보기 위해 Jenkins와 Github Actions의 차이를 비교해보면서 **효율적인 업무 환경을 구성해보는 이점**을 가져오면서 **현재 프로젝트 상황에 적합한 방법을 선정해보는 경험**을 해볼 수 있었습니다.
 
 ## # 참고자료
+***
 - https://choseongho93.tistory.com/295
 - https://www.daleseo.com/github-actions-basics/
 - https://velog.io/write?id=748f7b13-4081-4aa8-9442-cd3ffb20ada5

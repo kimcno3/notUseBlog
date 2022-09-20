@@ -7,6 +7,7 @@ tags: java
 ---
 
 ## HashSet
+***
 HashSet은 Set 구조를 구현한 클래스 중 하나로 중복과 순서가 없는 자료구조이다.
 
 근데 HashSet의 내부 코드를 보면 **내부는 HashMap**으로 구현되어 있다.
@@ -39,6 +40,7 @@ public boolean remove(Object o) {
 <br>
 
 ## HashMap
+***
 그렇다면 HashMap은 어떻게 구현되어 있을까?
 > 상세한 내부 코드 설명은 블로그 링크로 대체합니다.(https://bepoz-study-diary.tistory.com/328?category=833599)
 

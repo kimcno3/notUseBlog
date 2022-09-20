@@ -7,10 +7,11 @@ tags: f-lab project2
 ---
 
 ## # 문제점
+***
 로컬환경에서 수정이 계속되는 jar 파일을 직접 터미널을 통해 ec2 서버에 전송해주고 실행시키는 작업 환경이 매우 반복적이고 오랜 시간이 걸리는 불편함을 느꼈고 이를 자동화를 통해 해결해 했습니다.
 
-
 ## # 해결방안
+***
 ### 1. Github Actions
 > Github Actions에 대한 정보와 특징은 [CI 툴로 Github Actions를 선택했던 이유](http://localhost:4000/f-lab/2022/06/24/Github-Actions%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-CI-%EA%B5%AC%EC%84%B1.html)와 동일합니다.
 
@@ -220,9 +221,11 @@ jobs:
             sudo java -jar -Dspring.profiles.active=prod $SOURCE_DIR/$FILE_NAME > /dev/null 2>&1 &
 ```
 ## # 마치며
+***
 Github Actions를 통해 수정된 jar 파일을 수동으로 aws 서버로 전송하지 않고 간편하게 배포까지 하는 로직을 구현하면서 엄청난 편리함을 얻을 수 있었고, CI/CD를 구성하는 과정을 직접 경험해보면서 하나의 제품이 어떻게 빌드되고 배포되는지 그 흐름을 이해할 수 있었습니다.
 
 ## # 참고자료
+***
 - https://www.daleseo.com/github-actions-basics/
 - https://veluxer62.github.io/tutorials/tutorial-of-continuous-deployment-with-git-actions/
 - https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-vpc-secure-management-bastion-server

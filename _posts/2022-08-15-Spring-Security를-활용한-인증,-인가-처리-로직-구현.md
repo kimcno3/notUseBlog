@@ -7,11 +7,13 @@ tags: f-lab project2
 ---
 
 ## # 문제점
+***
 이전 프로젝트에선 세션/쿠키 인증 방식으로 로그인 기능을 구현했고, 이를 위한 로직을 직접 코드로 작성했었습니다. 그로 인해 제가 직접 구현된 로직 내에서 발생할 수 있는 에러의 위험은 높았고, 보안성에 대한 완성도도 높지 못해 핵심 정보에 대한 노출 위험도 높았다고 볼 수 있습니다.
 
 이를 발전시키기 위해 Spring에서 오직 인증, 인가 처리를 위해서만 제공하는 Spring Security를 가져와 활용해보기로 했습니다.
 
 ## # 해결방안
+***
 ### Spring Security란?
 Spring Security는 Spring 기반 애플리케이션의 보안을 담당하는 스프링 하위 Framework로써 '인증(Authentication)'과 '인가(Authorization)'에 대한 부분을 Filter의 흐름에 따라 처리합니다.
 
@@ -386,9 +388,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ```
 ## # 마치며
+***
 이처럼 Spring Security는 인증과 인가에 대한 다양한 기능을 제공해줌으로써 어플리케이션 구현에 있어 큰 편리함과 안정성을 보장해줍니다. 다만 동작 원리가 복잡해 이를 제대로 이해하고 있지 못한다면 올바르게 활용하기 어려울 수 있기 때문에 정확한 이해가 필요합니다.
 
 ## # 참고 자료
+***
 - https://velog.io/@seongwon97/Spring-Security-Spring-Security%EB%9E%80
 - https://velog.io/@kyungwoon/Spring-Security-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC
 - https://hose.tistory.com/10	

@@ -7,6 +7,7 @@ tags: f-lab project2
 ---
 
 ## # 문제점
+***
 Redis를 구성할 때, 하나의 서버로만 구성하다 보니 다음과 같은 문제점이 발생할 수 있는 가능성이 높았습니다.
 
 - 서버 과부화
@@ -17,6 +18,7 @@ Redis를 구성할 때, 하나의 서버로만 구성하다 보니 다음과 같
 Redis Cluster로 구성하는 것이였고 Redis Cluster를 통해 제가 직접 어떠한 로직을 구현하지 않고도 Redis 내부적으로 저장될 데이터에 대한 분산 처리를 담당해줌으로써 효율적인 다중 서버 구조를 구현할 수 있었습니다. 추가로 각 Redis Node들에 대해서 Replication 구조를 추가적으로 설계함으로써 Master 노드가 다운된 경우에도 Slave 서버가 승격함으로써 데이터 처리에 대한 장애가 발생하지 않도록 구성했습니다.
 
 ## # 해결 방안
+***
 ### 1. Redis Cluster
 
 Redis Cluster는 요청 처리에 대한 과부화를 방지하기 위해 여러 개의 노드 서버를 구성해 데이터를 분산 저장 및 처리 할 수 있도록 구성하는 것을 의미합니다.
@@ -213,10 +215,11 @@ Redis 구성 클래스도 application.yml에서 저장한 노드들의 주소값
 또한 Master-Slave 구조에서 우선적으로 접근할 대상 노드를 Slave 노드로 지정해, Slave 노드가 다운된 경우에 Master 노드로 접근하도록 구성했습니다. (`.readFrom(ReadFrom.REPLICA_PREFERRED)`)
 
 ## # 마치며
+***
 이처럼 Redis Cluster와 Replication 구조를 구성함으로써 트래픽 과부화와 서버 다운시 발생할 수 있는 데이터 분실에 대한 위험을 줄이기 위한 고민을 해결할 수 있었고, Redis에서 제공해주는 기능을 활요하기 위해 직접 코드를 수정해보고 고민해보는 시간을 가질 수 있었습니다.
 
-
 ## # 참고 자료
+***
 - https://velog.io/@18k7102dy/Redis-Redis-cluster-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0
 - https://co-de.tistory.com/24
 - https://daddyprogrammer.org/post/1601/redis-cluster/
