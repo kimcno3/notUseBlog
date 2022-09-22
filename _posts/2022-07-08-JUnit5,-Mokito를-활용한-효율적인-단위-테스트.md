@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[soldout] JUnit5, Mokito를 활용한 효율적인 단위 테스트"
+title: "[soldout] JUnit5, Mockito를 활용한 효율적인 단위 테스트"
 author: kimcno3
 categories: f-lab
 tags: f-lab project1
@@ -12,15 +12,15 @@ tags: f-lab project1
 
 ## # 해결방안
 ***
-### TDD
 
 ### JUnit
+
 
 ### Mockito
 
 ## # 마치며
 ***
-이처럼 JUnit을 통해 유닛 테스트 코드를 작성해가면서 TDD에 대한 이해와 중요성을 직접 느낄 수 있었습니다.
+이처럼 JUnit을 통해 유닛 테스트 코드를 작성해가면서 TDD에 대한 기본적인 이해와 중요성을 직접 느낄 수 있었습니다.
 
 
 ## # 참고자료
