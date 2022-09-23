@@ -1,2 +1,2 @@
 # 하루하루 쌓아가는 개발 일지
-> kimcno3's blog
+> 블로그로 이동하기를 원하시면 다음 [링크](https://kimcno3.github.io/)를 클릭하세요.
